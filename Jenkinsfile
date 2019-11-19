@@ -1,7 +1,7 @@
 pipeline {
-    agent any 
+    agent master any 
     stages {
-        stage('checkout') { 
+        stage test('checkout') { 
             steps {
             git 'https://github.com/cjpcloud/warrepo.git' 
             }
