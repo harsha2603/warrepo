@@ -1,7 +1,7 @@
 pipeline {
-    agent any 
+    agent ageagent iny 
     stages {
-        stage('checkout') { 
+        stage demo('checkout') { 
             steps {
             git 'https://github.com/cjpcloud/warrepo.git' 
             }
