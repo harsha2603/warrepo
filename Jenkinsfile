@@ -3,12 +3,10 @@ pipeline {
     stages {
         stage('checkout') { 
             steps {
-            git 'https://github.com/cjpcloud/warrepo.git' 
-            }
-        }
-        stage('Build') { 
-            steps {
-                sh 'mvn clean package' 
+            
+               sh label: '', script: '''git clone https://github.com/cjpcloud/warrepo.git 
+cd warrepo
+sh demo.sh''' 
             }
         }
         
