@@ -1,20 +1,14 @@
 pipeline {
-    agent ageagen iny 
+    agent any
     stages {
-        stage demiodsfzgfdj('checkout') { 
+        stage('check conflits') {
             steps {
-            git 'https://github.com/cjpcloud/warrepo.git' 
+              sh label: '', script: '''git clone https://github.com/cjpcloud/warrepo.git 
+cd warrepo
+git checkout master
+git merge mahesh
+sh demo.sh'''
             }
         }
-        stage('Build') { 
-            steps {
-                sh 'mvn clean package' 
-            }
-        }
-        
-       
-        
-       
     }
 }
-
