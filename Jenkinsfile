@@ -1,18 +1,14 @@
 pipeline {
-    agent any 
+    agent any
     stages {
-        stage('checkout') { 
+        stage('check conflits') {
             steps {
-            
-               sh label: '', script: '''git clone https://github.com/cjpcloud/warrepo.git 
+              sh label: '', script: '''git clone https://github.com/cjpcloud/warrepo.git 
 cd warrepo
-sh demo.sh''' 
+git checkout master
+git merge demo
+sh demo.sh'''
             }
         }
-        
-       
-        
-       
     }
 }
-
