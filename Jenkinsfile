@@ -1,9 +1,10 @@
 pipeline {
     agent any
     stages {
-        stage('CheckOut') {
+        stage('check conflits') {
             steps {
-                 sh 'date'
+                sh label: '', script: '''cd warrepo
+sh demo.sh'''
             }
         }
     }
