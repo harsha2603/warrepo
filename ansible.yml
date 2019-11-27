@@ -1,0 +1,19 @@
+---
+- hosts: localhost
+  vars:
+    source: "{{ src }}"
+    destination: "/home/ubuntu/github"
+  tasks:
+   - name: create the folder
+     file:
+      path: /home/ubuntu/github
+      state: directory
+      mode: 0755
+      owner: ubuntu
+      group: ubuntu
+   - name: file copy
+     copy:
+       src: "{{ source }}"
+       dest: "{{ destination }}"
+       owner: ubuntu
+       group: ubuntu
