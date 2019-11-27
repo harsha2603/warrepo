@@ -11,11 +11,11 @@
       path: /var/lib/jenkins/mahi
       state: directory
       mode: 0755
-      owner: ubuntu
-      group: ubuntu
+      owner: jenkins
+      group: jenkins
    - name: file copy
      copy:
        src: "{{ source }}"
        dest: "{{ destination }}"
-       owner: ubuntu
-       group: ubuntu
+       owner: jenkins
+       group: jenkins
