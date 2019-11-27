@@ -1,5 +1,7 @@
 ---
 - hosts: localhost
+  gather_facts: no
+  become: no
   vars:
     source: "{{ src }}"
     destination: "/home/ubuntu/github"
