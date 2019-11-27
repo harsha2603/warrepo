@@ -4,11 +4,11 @@
   become: no
   vars:
     source: "{{ src }}"
-    destination: "/home/ubuntu/github"
+    destination: "/home/ubuntu/github1"
   tasks:
    - name: create the folder
      file:
-      path: /home/ubuntu/github
+      path: /home/ubuntu/github1
       state: directory
       mode: 0755
       owner: ubuntu
