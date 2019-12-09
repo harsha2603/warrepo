@@ -1,6 +1,8 @@
+mvn clean package
 if [ $? -eq 0 ];
 then
-tv test
-else
-ls
+echo "pac ke build"
+else;
+mvn clean test
+echo "package build"
 fi
