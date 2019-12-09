@@ -3,6 +3,6 @@ if [ $? -eq 0 ];
 then
 echo "pac ke build"
 else
-mvn clean test
+ls
 echo "package build"
 fi
