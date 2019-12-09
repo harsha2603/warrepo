@@ -1,6 +1,6 @@
 if [ $? -eq 0 ];
 then
-pwd
+tv test
 else
 ls
 fi
