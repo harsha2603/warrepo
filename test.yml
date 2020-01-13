@@ -47,3 +47,4 @@
    
    - name: start apache-tomcat-8.0.27
      command: nohup "/home/ubuntu/tomcat/apache-tomcat-8.0.27/bin/startup.sh"
+strurkkhklyukt7kiur6
