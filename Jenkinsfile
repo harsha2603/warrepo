@@ -7,7 +7,7 @@ pipeline {
 cd warrepo
 git checkout master
 git merge origin/demo
-sh demo.sh'''
+sh demo.sh'''ASQW
             }
         }
     }
